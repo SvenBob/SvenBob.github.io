@@ -1,0 +1,30 @@
+<html>
+     <head>
+			<title>
+			The report of experiment2
+	</title>
+	 </head>	
+	 <body>
+	    
+	<a text="#" style="position:absolute; left:100px; top:50px;"> 1:The scene shows three varying colours that all sitting on a checkboard  </a>
+	<a text="#" style="position:absolute; left:100px; top:70px;"> 2: The Light model refered to the content in the wikipedia-Phong reflection mode </a>
+	<a text="#" style="position:absolute; left:100px; top:90px;">3:My impression about the learning of the Phong reflection model,but let's display the core of this model first: </a>
+	<img src="Phong.png" width="500px"; height="600px"; style="position:absolute; left:300px; top:120px; ">
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	  
+	 
+	 
+	 
+	 
+	 
+	 
+	 	 
+	 </body>
+	 
+</html>	 
