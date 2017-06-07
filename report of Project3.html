@@ -5,22 +5,34 @@
 	</title>
 	 </head>	
 	 <body>
-	    
-	<a text="#" style="position:absolute; left:100px; top:50px;">The Data Set Need to be Visualized   </a>
-	<img src="optionalAssignmentData.png" width="600px"; height="300px"; style="position:absolute; left:300px; top:80px; ">
-	<a text="#" style="position:absolute; left:100px; top:400px;"> The display of the Visualization("ctrl+scroll" to moderate the scale) </a>
-    <img src="optionalAssignment.png" width="800px"; height="300px"; style="position:absolute; left:300px; top:450px; ">
-	<a text="#" style="position:absolute; left:100px; top:760px;"> The idea of the design of the Assignment </a>
-	<a text="#" style="position:absolute; left:100px; top:760px;"> The idea of the design of the Assignment </a> 	 
-    <a text="#" style="position:absolute; left:100px; top:780px;"> 1:The predealing of the data:logD and devide the dataset into three equivalent classes: </a>	
-    <a text="#" style="position:absolute; left:120px; top:800px;">class1:-3~-1(0.001-0.1) </a>
-	<a text="#" style="position:absolute; left:120px; top:820px;">class2:-1~1(0.1-10) </a>	
-	<a text="#" style="position:absolute; left:120px; top:840px;">class3:1~3(10-1000) </a>
-    <a text="#" style="position:absolute; left:100px; top:860px;">2:The color is the key of the project because color can be more directed perceived(which is the purpose of the Visualization) than the length or size.In order to achieve this goal,I set a two demensional linear structure for the color</a> 	 
-    <a text="#" style="position:absolute; left:120px; top:900px;">2.1:Map the class1 to the deepest color and the class3 to the most shallow color </a>
-     <a text="#" style="position:absolute; left:120px; top:920px;">2.2:The deeper the color,the more efficient the drug(Take class1 for the example,"0.01" is in this class which denote the remanent germ.So if the effect of the drug is in the class3,the drug is more efficient since that the remanent germ is fewer </a>
-	<a text="#" style="position:absolute; left:120px; top:960px;">2.3:In a word,The color blue,red yellow denote the kind of drug,while the axis-x denote the kind of germ,the depth of color denotes the remanent of the germ(efficiency) </a>
-     <a text="#" style="position:absolute; left:100px; top:1000px;">3:The color the the subscrpt below the axis-x denote the effect is negative or positive(The amout of germ compared with that of before using the drug ) </a>
-	</body> 
-	 
-</html>	 
+	   		<img src="Assignment2.png" width="400px"; height="300px"; style="position:absolute; left:300px; top:80px; ">
+	     <a text="#" style="position:absolute; left:420px; top:50px;">Phong Illumination Model  </a>
+	 <img src="Phong.png" width="400px"; height="300px"; style="position:absolute; left:300px; top:80px; ">
+	    <a text="#" style="position:absolute; left:100px; top:420px;">1:The final effect of the Phong Model consists of three parts:Ambient,Diffuse,Specular</a>
+       <a text="#" style="position:absolute; left:120px; top:440px;">1.1: Ka,which is an ambient reflection constant, the ratio of reflection of the ambient term present in all points in the scene rendered, and
+        a, which is a shininess constant for this material, which is larger for surfaces that are smoother and more mirror-like. When this constant is large the specular highlight is small.</a>
+	    <a text="#" style="position:absolute; left:120px; top:500px;">1.2:Kd,which is a diffuse reflection constant, the ratio of reflection of the diffuse term of incoming light (Lambertian reflectance)</a>
+		<a text="#" style="position:absolute; left:120px; top:520px;">1.3:Ks,which is a specular reflection constant, the ratio of reflection of the specular term of incoming light,</a>
+	    <img src="Assignmentpic2.png" width="400px"; height="300px"; style="position:absolute; left:400px; top:540px; ">
+	    <a text="#" style="position:absolute; left:100px; top:920px;">1:N:The Normal line  </a>
+	    <a text="#" style="position:absolute; left:100px; top:940px;">2:V:The location of Observer  </a>
+	    <a text="#" style="position:absolute; left:100px; top:960px;">3:N:The Angular bisector between N and H</a>
+	    <a text="#" style="position:absolute; left:100px; top:980px;">4:L:The light source</a>
+		<a text="#" style="position:absolute; left:100px; top:1000px;">5:R:The reflective light of the light source</a>
+	    <a text="#" style="position:absolute; left:400px; top:1080px;">The introduction of the fuction of the each headfiles </a>
+		 <a text="#" style="position:absolute; left:100px; top:1100px;">(Each headfiles just define the methods need to be implemented and the parameter of each methods.It also define the members and the relationship with other headfiles.However,it doesn't give the implementation of each methods.)
+		 <a text="#" style="position:absolute; left:100px; top:1140px;">1:Sphere.h:define the color(call color.h),the radius and the location of the sphere.Especially,it defines the intersection of the Sphere with other vectors. </a>
+		 <a text="#" style="position:absolute; left:100px; top:1160px;">2:Color.h:Firstly,it defines some basic color(BLACK,WHITE,BLUE...).Secondly,it defines the methods such as combination,scale color.Especially,it deals with the Phong Illumination model by using the expressions </a>
+		 <a text="#" style="position:absolute; left:100px; top:1200px;">3:Cylinder.h: </a>
+         <a text="#" style="position:absolute; left:120px; top:1220px;">3.1:Cylinder's intersection method, The input is a ray (pos, dir). </a>                                                       		
+         <a text="#" style="position:absolute; left:120px; top:1240px;">3.2:Cylinder's Normal method,Return the  unit normal vector at a given point</a>
+	     <a text="#" style="position:absolute; left:100px; top:1260px;">4:Object.h:the higher level compared with Sphere.h,Color.h,,Cylinder.h,because it call the method in them.Especially,it doesn't define other methods </a> 
+		<a text="#" style="position:absolute; left:100px; top:1300px;">5:Plane.h: </a> 
+		<a text="#" style="position:absolute; left:120px; top:1320px;">5.1:bool IsInside(Vector q):Test if an input point is within the quad. </a>
+	    <a text="#" style="position:absolute; left:120px; top:1340px;">5.2:float Plane::intersect(Vector pos, Vector dir):compute the paramter t at the point of intersection.</a>
+		<a text="#" style="position:absolute; left:120px; top:1360px;">5.3: Vector Plane::normal(Vector pos):to compute the unit normal vector</a>
+		<a text="#" style="position:absolute; left:100px; top:1380px;">6:Vector.h:It only defines various of operation of the vectors </a> 
+		<a text="#" style="position:absolute; left:100px; top:1400px;">7:TextureBMP.h:It defines the input and output of the images </a> 
+		 <a text="#" style="position:absolute; left:100px; top:1420px;">The introduction of the fuction of the cpp files:They implement the method defined in the headfiles. </a>
+		  
+	</html>	 
